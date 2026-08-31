@@ -58,17 +58,17 @@
        padding:calc(var(--u)*.18) calc(var(--u)*.5);white-space:nowrap}
   .tag.z{background:#DCEDE5;color:var(--free)} .tag.l{background:#F6ECD8;color:var(--low)} .tag.p{background:#F7DDE3;color:var(--paid)}
 
-  .two{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--u)*4);margin-top:calc(var(--u)*2.6)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--u)*3.4);margin-top:calc(var(--u)*2.2)}
   .two h3{font-size:calc(var(--u)*2.4);font-weight:800;line-height:1.1}
-  .two ul{margin-top:calc(var(--u)*1.2);padding-left:calc(var(--u)*2);display:flex;flex-direction:column;gap:calc(var(--u)*.9)}
-  .two li{font-size:calc(var(--u)*1.6);line-height:1.35;color:var(--body)}
-  .wrong h3{color:var(--paid)} .right h3{color:var(--free)}
-  .wrong li::marker{color:var(--paid)} .right li::marker{color:var(--free)}
+  .two ul{margin-top:calc(var(--u)*1);padding-left:calc(var(--u)*1.8);display:flex;flex-direction:column;gap:calc(var(--u)*.7)}
+  .two li{font-size:calc(var(--u)*1.5);line-height:1.32;color:var(--body)}
+  .wrong h3,.right h3{color:var(--ink)}
+  .wrong li::marker,.right li::marker{color:var(--muted)}
 
-  .ex{display:grid;grid-template-columns:auto 1fr;gap:calc(var(--u)*1) calc(var(--u)*1.6);
-      margin-top:calc(var(--u)*2.2);padding-top:calc(var(--u)*1.6);border-top:2px solid var(--rule);align-items:baseline}
+  .ex{display:grid;grid-template-columns:auto 1fr;gap:calc(var(--u)*.7) calc(var(--u)*1.5);
+      margin-top:calc(var(--u)*1.5);padding-top:calc(var(--u)*1.2);border-top:2px solid var(--rule);align-items:baseline}
   .ex .lab{font-size:calc(var(--u)*1.15);font-weight:800;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
-  .ex .no{color:var(--paid)} .ex .yes{color:var(--free)}
+  .ex .no,.ex .yes{color:var(--muted)}
   .ex .val{font-size:calc(var(--u)*1.55);line-height:1.35}
   .ex .val.thin{color:var(--muted)}
   .res{margin-top:calc(var(--u)*2.4);padding:calc(var(--u)*1.6) calc(var(--u)*1.9);
@@ -161,7 +161,7 @@
         <li>An OER course <strong>has</strong> required materials. They are free, not absent.</li>
         <li>Every item listed separately, required ones marked required</li>
         <li>Title, author, edition, ISBN, and link</li>
-        <li>Your best estimate of the cost. Not knowing the exact price is not a reason to leave it blank, we verify with eCampus.</li>
+        <li>Your best estimate of the cost. We verify with eCampus.</li>
         <li>Enough detail that a student could find and buy it from your entry alone</li>
       </ul>
     </div>
