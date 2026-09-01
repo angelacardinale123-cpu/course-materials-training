@@ -1,4 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Course materials reporting: what faculty need to know</title>
+</head>
+<body>
 <style>
   :root{
     --navy:#002269; --ink:#141A2B; --body:#3B4358; --muted:#5F667A;
@@ -58,18 +65,18 @@
        padding:calc(var(--u)*.18) calc(var(--u)*.5);white-space:nowrap}
   .tag.z{background:#DCEDE5;color:var(--free)} .tag.l{background:#F6ECD8;color:var(--low)} .tag.p{background:#F7DDE3;color:var(--paid)}
 
-  .two{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--u)*4);margin-top:calc(var(--u)*2.6)}
-  .two h3{font-size:calc(var(--u)*2.4);font-weight:800;line-height:1.1}
-  .two ul{margin-top:calc(var(--u)*1.2);padding-left:calc(var(--u)*2);display:flex;flex-direction:column;gap:calc(var(--u)*.9)}
-  .two li{font-size:calc(var(--u)*1.6);line-height:1.35;color:var(--body)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--u)*4);margin-top:calc(var(--u)*2.1)}
+  .two h3{font-size:calc(var(--u)*2.25);font-weight:800;line-height:1.1}
+  .two ul{margin-top:calc(var(--u)*1);padding-left:calc(var(--u)*2);display:flex;flex-direction:column;gap:calc(var(--u)*.6)}
+  .two li{font-size:calc(var(--u)*1.5);line-height:1.32;color:var(--body)}
   .wrong h3{color:var(--paid)} .right h3{color:var(--free)}
   .wrong li::marker{color:var(--paid)} .right li::marker{color:var(--free)}
 
   .ex{display:grid;grid-template-columns:auto 1fr;gap:calc(var(--u)*1) calc(var(--u)*1.6);
-      margin-top:calc(var(--u)*2.2);padding-top:calc(var(--u)*1.6);border-top:2px solid var(--rule);align-items:baseline}
+      margin-top:calc(var(--u)*1.4);padding-top:calc(var(--u)*1.1);border-top:2px solid var(--rule);align-items:baseline}
   .ex .lab{font-size:calc(var(--u)*1.15);font-weight:800;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
   .ex .no{color:var(--paid)} .ex .yes{color:var(--free)}
-  .ex .val{font-size:calc(var(--u)*1.55);line-height:1.35}
+  .ex .val{font-size:calc(var(--u)*1.45);line-height:1.35}
   .ex .val.thin{color:var(--muted)}
   .res{margin-top:calc(var(--u)*2.4);padding:calc(var(--u)*1.6) calc(var(--u)*1.9);
        background:var(--panel);border-left:calc(var(--u)*.5) solid var(--accent)}
@@ -115,7 +122,7 @@
   <h2>This is a disclosure requirement, not a preference</h2>
   <p class="quote">Colleges must &ldquo;prominently display &hellip; the estimated costs for each course of all required course materials and fees directly related to those materials.&rdquo;</p>
   <p class="cite">Education Code &sect; 66406.9, as amended by AB 607 (2023)</p>
-  <p class="sub">Federal law already required the ISBN and retail price of required and recommended textbooks, plus the cost of supplemental materials, to be disclosed in the course schedule at the time of registration.</p>
+  <p class="sub">Federal law already asked for this. To the maximum extent practicable, the ISBN and retail price of required and recommended textbooks and supplemental materials belong on the course schedule used for registration.</p>
   <p class="push src">20 U.S.C. &sect; 1015b &middot; Higher Education Opportunity Act</p>
 </section>
 
@@ -129,7 +136,7 @@
     <div class="date"><div class="pct">75%</div><div class="when">by Jan 1, 2028</div></div>
   </div>
   <p class="sub">The Chancellor's Office surveys colleges to certify compliance. The denominator is every section on the online schedule with an assigned instructor.</p>
-  <p class="push src">CCCCO memo ESLEI 24-32, May 21, 2024</p>
+  <p class="push src">Education Code &sect; 66406.9 &middot; CCCCO memo ESLEI 24-32, May 21, 2024</p>
 </section>
 
 <section class="slide" data-bg="navy">
@@ -153,6 +160,7 @@
         <li>&ldquo;This course uses OER&rdquo; with no title, author, or link</li>
         <li>No ISBN and no edition, which leaves nothing to verify the price against</li>
         <li>Access codes, lab kits, and software left off</li>
+        <li>Scanned chapters posted in Canvas in place of an adopted text, so nothing appears on the form at all</li>
       </ul>
     </div>
     <div class="right">
@@ -161,30 +169,43 @@
         <li>An OER course <strong>has</strong> required materials. They are free, not absent.</li>
         <li>Every item listed separately, required ones marked required</li>
         <li>Title, author, edition, ISBN, and link</li>
-        <li>Your best estimate of the cost. Not knowing the exact price is not a reason to leave it blank, we verify with eCampus.</li>
+        <li>Your best estimate of the cost. A price you do not know yet is not a reason to leave it blank. We verify with eCampus.</li>
         <li>Enough detail that a student could find and buy it from your entry alone</li>
       </ul>
     </div>
   </div>
   <div class="ex">
-    <span class="lab no">Not enough</span><span class="val thin">Biology textbook &mdash; free online</span>
-    <span class="lab yes">Enough</span><span class="val"><strong>Biology 2e</strong>, OpenStax, 2nd edition, ISBN 9781947172517, openstax.org, $0. Required. Also required: lab manual, $18.</span>
+    <span class="lab no">Not enough</span><span class="val thin">Biology textbook, free online</span>
+    <span class="lab yes">Enough</span><span class="val"><strong>Biology 2e</strong>, OpenStax 2nd ed., digital ISBN 9781947172524, openstax.org, $0. Lab manual, $18. Both required.</span>
   </div>
+</section>
+
+<section class="slide">
+  <p class="eyebrow">Scanned readings</p>
+  <h2>A scan is not an adoption</h2>
+  <p class="sub">Posting scanned chapters in place of an adopted text creates three problems at once.</p>
+  <div class="steps">
+    <div class="step"><span class="n">01</span><h3>Copyright</h3><p>Scanning and posting a chapter is not automatically fair use. A semester of assembled chapters is the case least likely to survive the four factor test.</p></div>
+    <div class="step"><span class="n">02</span><h3>Accessibility</h3><p>A scan is usually a picture of a page with no text layer. A screen reader finds nothing to read, and the text will not enlarge or reflow. That fails WCAG 2.1 Level AA.</p></div>
+    <div class="step"><span class="n">03</span><h3>The report</h3><p>The scan never reaches the adoption form, so the section looks like it has no materials at all.</p></div>
+  </div>
+  <p class="sub">Send the reading to the Library first. We can check licensing, request permission, buy an accessible copy, or find an open replacement.</p>
+  <p class="push src">17 U.S.C. &sect; 107 &middot; ADA Title II, 28 CFR &sect; 35.200 &middot; WCAG 2.1 Level AA</p>
 </section>
 
 <section class="slide">
   <p class="eyebrow">The XB12 codes</p>
   <h2>Seven answers, and five of them are zero cost</h2>
   <table>
-    <thead><tr><th>Code</th><th>What it means</th><th>Category</th><th class="n">Share of Fall 2026</th></tr></thead>
+    <thead><tr><th scope="col">Code</th><th scope="col">What it means</th><th scope="col">Category</th><th scope="col" class="n">Share of Fall 2026</th></tr></thead>
     <tbody>
       <tr class="ztc"><td class="code">A</td><td>No required materials at all</td><td><span class="tag z">Zero cost</span></td><td class="n">25%</td></tr>
       <tr class="ztc"><td class="code">C</td><td>Materials provided by the college</td><td><span class="tag z">Zero cost</span></td><td class="n">3%</td></tr>
       <tr class="ztc"><td class="code">E</td><td>OER only</td><td><span class="tag z">Zero cost</span></td><td class="n">20%</td></tr>
       <tr class="ztc"><td class="code">F</td><td>Free digital, not formally OER</td><td><span class="tag z">Zero cost</span></td><td class="n">7%</td></tr>
       <tr class="ztc"><td class="code">G</td><td>Mix of OER and college-provided</td><td><span class="tag z">Zero cost</span></td><td class="n">8%</td></tr>
-      <tr class="low"><td class="code">D</td><td>Students pay $40 or less</td><td><span class="tag l">Low cost</span></td><td class="n">8%</td></tr>
-      <tr class="paid"><td class="code">Y</td><td>Students pay more than $40</td><td><span class="tag p">Standard</span></td><td class="n">29%</td></tr>
+      <tr class="low"><td class="code">D</td><td>Low cost, as defined locally. Ours is $40 or less</td><td><span class="tag l">Low cost</span></td><td class="n">8%</td></tr>
+      <tr class="paid"><td class="code">Y</td><td>Above our low cost line</td><td><span class="tag p">Standard</span></td><td class="n">29%</td></tr>
     </tbody>
   </table>
   <p class="push src">A and E are not the same answer. Choosing A for an OER course loses the OER count.</p>
@@ -193,7 +214,7 @@
 <section class="slide">
   <p class="eyebrow">All required materials</p>
   <h2>It is not only the textbook</h2>
-  <p class="sub">AB 607 requires disclosure of <strong>all instructional materials associated with a course</strong>, plus fees directly related to them. The Chancellor's Office names the first three specifically. The list is not closed.</p>
+  <p class="sub">AB 607 requires disclosure of <strong>all required course materials</strong>, plus fees directly related to them. The Chancellor's Office names the first three specifically. The list is not closed.</p>
   <div class="steps five">
     <div class="step"><span class="n">01</span><h3>Textbooks</h3><p>Digital or physical.</p></div>
     <div class="step"><span class="n">02</span><h3>Devices</h3><p>Calculators, and remote attendance platforms.</p></div>
@@ -210,7 +231,7 @@
   <h2>Cost minimization is a stated duty</h2>
   <p class="quote">District policies &ldquo;shall direct instructors to take reasonable steps to minimize the cost and ensure the necessity of instructional materials.&rdquo;</p>
   <p class="cite">Title 5, California Code of Regulations, &sect; 59404(a)</p>
-  <p class="sub">Separately, an instructor who requires materials they authored, or from which they receive royalties, must disclose that to the institution.</p>
+  <p class="sub">Separately, a self-published textbook an instructor assigns to their own class is exempt from that act only if the instructor discloses the publishing and the use to the district. Royalties from materials containing your own work stay subject to the district&rsquo;s conflict of interest policies and the collective bargaining agreement.</p>
   <p class="push src">Education Code &sect; 66406.7, College Textbook Transparency Act</p>
 </section>
 
@@ -243,12 +264,12 @@
   <p class="eyebrow">Come with questions</p>
   <h2>Training session</h2>
   <p class="sub" style="font-size:calc(var(--u)*2.6);color:var(--ink)">
-    <strong>Tuesday, September 9</strong><br>2:00 to 3:00 pm<br>with Kyri Freeman
+    <strong>Wednesday, September 9</strong><br>2:00 to 3:00 pm<br>with Kyri Freeman
   </p>
   <p class="sub">A session on finding and adopting course materials, with a focus on open educational resources.</p>
   <div class="res">
     <span class="lab">In the meantime</span>
-    <p class="url"><a href="https://www.barstow.edu/academics/library/oer-resources-faculty">barstow.edu/academics/library/oer-resources-faculty</a></p>
+    <p class="url"><a href="https://www.barstow.edu/academics/library/ztcoer-resources-faculty">barstow.edu/academics/library/ztcoer-resources-faculty</a></p>
     <p>OER Resources for Faculty, from the Library.</p>
   </div>
   <p class="push src">Bring questions about a course you are working on</p>
@@ -277,3 +298,6 @@
   render();
 })();
 </script>
+
+</body>
+</html>
